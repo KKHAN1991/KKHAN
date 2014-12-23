@@ -1,0 +1,160 @@
+/*
+  Header
+*/
+
+.site-header {
+  background: rgba(0, 0, 0, 0.90);
+  min-height:70px;
+  line-height:70px;
+  width:100%;
+  position:fixed;
+  z-index:999;
+
+}
+
+.menu-toggle {
+  position:static !important;
+}
+
+/*
+  Navigation
+*/
+
+.site-nav {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAX/yeAAAIHCA/0RE2WAAAAAAElFTkSuQmCC) repeat;
+}
+
+.site-nav ul {
+  text-align:center;
+  color:#fff;
+}
+
+.site-nav ul li {
+  display:inline-block;
+}
+
+.site-nav ul li a {
+  display:block;
+  padding: 0 20px;
+
+}
+
+
+
+/*
+ Responsive Nav
+*/
+#menuButton {
+  display:none;
+}
+.hidden{
+  visibility: hidden
+}
+.visible {
+  visibility: visible
+}
+
+@media screen and (max-width: 768px) {
+
+  /*
+   Responsive Nav
+  */
+  #menuButton {
+    display:inline-block;
+    width:40px;
+    text-align:center;
+  }
+
+  #menuButton i {
+    font-size:20px;
+    line-height:40px;
+    color:#fff;
+  }
+  #menuButton i:hover {
+    cursor:pointer;
+  }
+  //Menu Slide out
+
+  .menu {
+    position: relative;
+    left: 0;
+    width:100%;
+  }
+
+  .menu-open {
+    left: 231px;
+  }
+
+  .menu-open .menu-side {
+    left: 0;
+  }
+
+  .menu-side,
+  .menu {
+    -webkit-transition: left 0.2s ease;
+    -moz-transition: left 0.2s ease;
+  }
+
+  .menu-side {
+    background-color: #181818;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -231px;
+    width: 231px;
+    height: 100%;
+    box-shadow: -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25) inset
+  }
+  .menu-side ul {
+    margin-top:40px;
+  }
+  .menu-side ul li {
+    border-bottom:1px solid #cbcbcb;
+    display:block;
+    line-height:40px;
+    font-weight:300;
+    font-size:100%;
+  }
+  .menu-side ul li:hover {
+    background-color:white;
+    color:#000;
+
+  }
+  .menu-side ul li a{
+    display:block;
+    cursor:pointer;
+    padding-left:10px;
+    text-align: initial;
+  }
+
+  .menu-side ul li:first-child {
+    border-top:1px solid #cbcbcb;
+  }
+
+
+  .menu-side h4 {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:1.2em;
+  }
+
+  .arrow-right:after {
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #181818;
+
+    border-width: 12px;
+    content: "";
+    left: inherit;
+    position: absolute;
+    top: 8px;
+    left: 219px;
+
+  }
+
+
+}
+
+

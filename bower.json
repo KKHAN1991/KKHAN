@@ -1,0 +1,23 @@
+{
+  "name": "kkhan",
+  "version": "0.0.0",
+  "authors": [
+    "KKHAN1991 <kkhan1991@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "wow": "~1.0.2",
+    "modernizr": "~2.8.3",
+    "jquery-smooth-scroll": "~1.5.4",
+    "font-awesome": "~4.2.0",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git"
+  }
+}
